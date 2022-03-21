@@ -1,14 +1,23 @@
-# Project
+# XPretrain
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This repo includes recent research works in multi-modality learning, especially with pre-training method.
 
-As the maintainer of this project, please make a few updates:
+## Multi-modality Learning
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+### Video & Language
+
+> [**HD-VILA**](): high-resolution and diversified video-langauge pre-training model
+> [**HD-VILA-100M**](): high-resolution and diversified video-langauge dataset
+
+## News
+
+- March, 2022: HD-VILA was accepted by CVPR 2022.
+
+## License
+
+This project is licensed under the license found in the LICENSE file in the root directory of this source tree.
+
+[Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
 
 ## Contributing
 
@@ -31,3 +40,8 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+## Contact Information
+
+For help or issues using the pre-trained models, please submit an issue.
+For other communications, please contact [Bei Liu] (`bei.liu@microsoft.com`) and [Jianlong Fu] (`jianf@microsoft.com`).
