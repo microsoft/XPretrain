@@ -12,7 +12,7 @@ This repo includes recent research works in multi-modality learning, especially 
 
 ## News
 
-- March, 2022: HD-VILA was accepted by CVPR 2022.
+- March, 2022: [**HD-VILA**]() was accepted by CVPR 2022.
 
 ## License
 
