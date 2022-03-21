@@ -7,6 +7,7 @@ This repo includes recent research works in multi-modality learning, especially 
 ### Video & Language
 
 > [**HD-VILA**](): high-resolution and diversified video-langauge pre-training model
+
 > [**HD-VILA-100M**](): high-resolution and diversified video-langauge dataset
 
 ## News
