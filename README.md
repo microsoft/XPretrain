@@ -6,13 +6,13 @@ This repo includes recent research works in multi-modality learning, especially 
 
 ### Video & Language
 
-> [**HD-VILA**](): high-resolution and diversified video-langauge pre-training model
+> [**HD-VILA**](https://github.com/microsoft/XPretrain/tree/main/hd-vila): high-resolution and diversified video-langauge pre-training model
 
-> [**HD-VILA-100M**](): high-resolution and diversified video-langauge dataset
+> [**HD-VILA-100M**](https://github.com/microsoft/XPretrain/tree/main/hd-vila-100m): high-resolution and diversified video-langauge dataset
 
 ## News
 
-- March, 2022: [**HD-VILA**]() was accepted by CVPR 2022.
+- March, 2022: [**HD-VILA**](https://github.com/microsoft/XPretrain/tree/main/hd-vila) was accepted by CVPR 2022.
 
 
 ## Contributing
