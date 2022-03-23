@@ -41,7 +41,7 @@ We will release all the code to download and process the data soon.
 
 ## License
 
-The license of the collected dataset is [here](../LICENSE).
+The license of the collected dataset is [here](./LICENSE).
 
 ## Citing HD-VILA
 
