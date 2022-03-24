@@ -12,6 +12,8 @@ This repo includes recent research works in multi-modality learning, especially 
 
 ## News
 
+- March, 2022: [**HD-VILA-100M dataset**](https://github.com/microsoft/XPretrain/tree/main/hd-vila-100m) was released publicly.
+
 - March, 2022: [**HD-VILA**](https://github.com/microsoft/XPretrain/tree/main/hd-vila) was accepted by CVPR 2022.
 
 
