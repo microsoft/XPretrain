@@ -14,7 +14,9 @@ This repo includes recent research works in multi-modality learning, especially 
 
 > [**HD-VILA**](https://github.com/microsoft/XPretrain/tree/main/hd-vila) (CVPR 2022): high-resolution and diversified video-langauge pre-training model
 
-### Image & Language Pre-training
+### Image & Language
+
+#### Pre-training model
 
 > [**Pixel-BERT**](https://arxiv.org/pdf/2004.00849.pdf): end-to-end image and language pre-training model
 
