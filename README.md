@@ -7,13 +7,17 @@ This repo includes recent research works in multi-modality learning, especially 
 ### Video & Language Pre-training
 
 > [**HD-VILA-100M dataset**](https://github.com/microsoft/XPretrain/tree/main/hd-vila-100m): high-resolution and diversified video-langauge dataset
+> [**HD-VILA pre-training model**](https://github.com/microsoft/XPretrain/tree/main/hd-vila) (CVPR 2022): high-resolution and diversified video-langauge pre-training model
 
-> [**HD-VILA pre-training model**](https://github.com/microsoft/XPretrain/tree/main/hd-vila): high-resolution and diversified video-langauge pre-training model
+### Image & Language Pre-training
+
+> [**Pixel-BERT pre-training model**](https://arxiv.org/pdf/2004.00849.pdf): end-to-end image and language pre-training model
+> [**SOHO pre-training model**](https://github.com/researchmm/soho) (CVPR 2021 oral): improved end-to-end image and language pre-training model with quantized visual tokens
+> [**VisualParsing pre-training model**](https://proceedings.neurips.cc/paper/2021/file/23fa71cc32babb7b91130824466d25a5-Paper.pdf)(NeurIPS 2021): Transformer-based end-to-end image and language pre-training model
 
 ## News
 
 - March, 2022: [**HD-VILA-100M dataset**](https://github.com/microsoft/XPretrain/tree/main/hd-vila-100m) was released publicly.
-
 - March, 2022: [**HD-VILA**](https://github.com/microsoft/XPretrain/tree/main/hd-vila) was accepted by CVPR 2022.
 
 
