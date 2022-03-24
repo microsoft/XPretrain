@@ -34,7 +34,18 @@ HD-VILA was accepted by CVPR 2022.
 
 ## Download
 
-You can download all the urls through this [link](./). We also offer all the timestamps to divide the videos into clips.
+You can download all the urls through this [link](./). We also offer all the timestamps to divide the videos into clips. The format of the data is:
+```
+{   
+    'video_id':'QMi8x8o55Ns',
+    'url': 'https://www.youtube.com/watch?v=QMi8x8o55Ns',
+    'clip': [
+                {'clip_id': 'QMi8x8o55Ns.1.mp4', 'span': ['00:00:17.759', '00:00:23.279']}
+                ...
+                {'clip_id': 'QMi8x8o55Ns.16.mp4', 'span': ['00:04:52.140', '00:05:03.350']}
+            ],
+}
+```
 
 We will release all the code to download and process the data soon.
 
