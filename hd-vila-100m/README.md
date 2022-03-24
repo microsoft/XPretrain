@@ -26,15 +26,9 @@ The details of our dataset are presented in the table below.
 | HD-VILA-100M | open | 100M | 100M | 13.4 | 32.5 | 371.5K | 720p |
 
 
-## News
-
-***03/02/2022***
-
-HD-VILA was accepted by CVPR 2022.
-
 ## Download
 
-You can download all the urls through this [link](./). We also offer all the timestamps to divide the videos into clips. The format of the data is:
+You can download all the urls through this [link](https://hdvila.blob.core.windows.net/dataset/hdvila100m.zip?sv=2020-08-04&ss=bqtf&srt=sco&sp=rwdlacuptfxi&se=2022-03-24T21:03:34Z&sig=aXcSNDh%2BK%2BqA%2BsapxAex94uAZURhXUqlja6dY3Z%2BYn0%3D&_=1648129626804). We also offer all the timestamps to divide the videos into clips. The format of the data is:
 ```
 {   
     'video_id':'QMi8x8o55Ns',
