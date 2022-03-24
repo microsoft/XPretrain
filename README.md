@@ -4,7 +4,7 @@ This repo includes recent research works in multi-modality learning, especially 
 
 ## Multi-modality Learning
 
-### Video & Language
+### Video & Language Pre-training
 
 > [**HD-VILA-100M dataset**](https://github.com/microsoft/XPretrain/tree/main/hd-vila-100m): high-resolution and diversified video-langauge dataset
 
