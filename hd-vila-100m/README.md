@@ -12,7 +12,7 @@ diversified video-language dataset to facilitate the multimodal representation l
 </p>
 
 ## Data statistics
-The dataset contains 3.1M videos in total with high-quality and distributed in 15 categories in balance.
+The dataset contains 3.3 million videos in total, which are of high quality and distributed in 15 categories in balance.
 <p align="center">
 <img src="figs/statics.png" alt="statistics" width="60%"/>
 </p>
