@@ -22,7 +22,7 @@ This repo includes recent research works in multi-modality learning, especially 
 
 > [**SOHO**](https://github.com/researchmm/soho) (CVPR 2021 oral): improved end-to-end image and language pre-training model with quantized visual tokens
 
-> [**VisualParsing**](https://proceedings.neurips.cc/paper/2021/file/23fa71cc32babb7b91130824466d25a5-Paper.pdf)(NeurIPS 2021): Transformer-based end-to-end image and language pre-training model
+> [**VisualParsing**](https://github.com/microsoft/XPretrain/tree/main/visualparsing)(NeurIPS 2021): Transformer-based end-to-end image and language pre-training model
 
 ## News
 
