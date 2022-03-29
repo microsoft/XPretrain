@@ -6,7 +6,7 @@ By [Hongwei Xue](https://hellwayxue.github.io/), [Yupan Huang](https://hypjudy.g
 
 ## Introdution
 
-we propose a fully Transformer visual embedding for Vision-Language Pre-training (VLP) to
+We propose a fully Transformer visual embedding for Vision-Language Pre-training (VLP) to
 better learn visual relation and further promote inter-modal alignment. Specifically,
 we propose a metric named Inter-Modality Flow (IMF) to measure the interaction
 between vision and language (i.e., inter-modality). We also design a novel masking
