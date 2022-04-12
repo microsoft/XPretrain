@@ -60,3 +60,8 @@ If you find this dataset useful for your research, please consider citing our pa
     year={2022}
 }
 ```
+
+## Contact Information
+
+For help or issues using the dataset, please submit an issue.
+For other communications, please contact [Bei Liu]() (`bei.liu@microsoft.com`), [Huan Yang]() (`huayan@microsoft.com`) and [Jianlong Fu]() (`jianf@microsoft.com`).
