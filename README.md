@@ -54,5 +54,5 @@ Any use of third-party trademarks or logos are subject to those third-party's po
 
 ## Contact Information
 
-For help or issues using the pre-trained models, please submit an issue.
+For help or issues using the pre-trained models, please submit an issue. 
 For other communications, please contact [Bei Liu]() (`bei.liu@microsoft.com`) and [Jianlong Fu]() (`jianf@microsoft.com`).
