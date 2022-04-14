@@ -72,7 +72,7 @@ The license of the code and pre-trained models is [here](../LICENSE).
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :blush:
 
 ```bibtex
-@inproceedings{xue2021advancing,
+@inproceedings{xue2022advancing,
     title={Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions},
     author={Xue, Hongwei and Hang, Tiankai and Zeng, Yanhong and Sun, Yuchong and Liu, Bei and Yang, Huan and Fu, Jianlong and Guo, Baining},
     booktitle={International Conference on Computer Vision and Pattern Recognition (CVPR)},
