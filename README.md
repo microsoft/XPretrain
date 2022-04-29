@@ -1,6 +1,6 @@
 # XPretrain
 
-This repo includes some recent research works in multi-modality learning, especially with pre-training method from [MSM group](https://www.microsoft.com/en-us/research/group/multimedia-search-and-mining/) of Microsoft Research. 
+This repo includes some recent research works in **multi-modality learning**, especially with **pre-training** method from [MSM group](https://www.microsoft.com/en-us/research/group/multimedia-search-and-mining/) of Microsoft Research. 
 
 ## Multi-modality Learning
 
