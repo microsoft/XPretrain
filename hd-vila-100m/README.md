@@ -63,4 +63,4 @@ If you find this dataset useful for your research, please consider citing our pa
 
 ## Contact Information
 
-For help or issues using the dataset, you can submit an issue or contact [Bei Liu]() (`bei.liu@microsoft.com`).
+For further request about dataset or problems using the dataset, you can submit an issue or contact [Bei Liu]() (`bei.liu@microsoft.com`).
