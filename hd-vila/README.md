@@ -65,7 +65,7 @@ command to get into the container ...
 
 ## License
 
-The license of the code and pre-trained models is under [Microsoft Research License Agreement](../LICENSE).
+The license of the code and pre-trained models is under [Microsoft Research License Agreement](./LICENSE).
 
 ## Citing HD-VILA
 
