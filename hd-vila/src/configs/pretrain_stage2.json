@@ -1,0 +1,81 @@
+{
+  "train_datasets": [
+    {
+      "name": "hdvila_pretrain",
+      "vis_format": "video",
+      "txt": "data/hdvila/train_group/part1.jsonl",
+      "vis": "data/hdvila/video_clips"
+    }
+  ],
+  "val_datasets": [
+    {
+      "name": "msrvtt",
+      "vis_format": "video",
+      "txt": "data/msrvtt_retrieval/test1ka.jsonl",
+      "vis": "data/msrvtt_retrieval/videos"
+    },
+    {
+      "name": "hdvila_test_full",
+      "vis_format": "video",
+      "txt": "data/hdvila/test_full_1k.jsonl",
+      "vis": "data/hdvila/video_clips"
+    }
+  ],
+
+  "model_config": "src/configs/base_model_large.json",
+  "e2e_weights_path": "data/output/pretrain_stage1/ckpt/model_step_1129660.pt",
+  "mmdetection_weights_path": "data/pretrained/res50_mmdetection.pth",
+  "bert_weights_path": "data/pretrained/bert-large-uncased/pytorch_model.bin",
+  "tokenizer_dir": "data/pretrained/bert-base-uncased/",
+  "output_dir": "data/output/pretrain_stage2",
+  "resnet_depth": 50,
+  "resnet_frozen_stage": -1,
+  "timesformer_depth": 4,
+  "timesformer_heads": 16,
+  "max_txt_len": 50,
+  "score_agg_func": "lse",
+  "loss_type": "ce",
+  "train_n_clips": 2,
+  "num_frm": 7,
+  "sample_rate": 12,
+  "crop_size": [640, 1024],
+  "out_size": [256, 128, 64, 3],
+  "train_batch_size": 16,
+  "val_batch_size": 16,
+  "max_n_example_per_group": 1,
+  "gradient_accumulation_steps": 2,
+  "num_train_epochs": 10,
+  "min_valid_steps": 1,
+  "num_valid": 100,
+  "only_valid_steps": 500,
+  "save_steps_ratio": 0.01,
+  "learning_rate": 5e-5,
+  "decay": "linear",
+  "optim": "adamw",
+  "betas": [0.9, 0.98],
+  "dropout": 0.1,
+  "weight_decay": 1e-3,
+  "grad_norm": 5.0,
+  "cnn_learning_rate": 5e-5,
+  "cnn_weight_decay": 1e-3,
+  "cnn_lr_decay": "linear",
+  "align_learning_rate": 5e-5,
+  "align_weight_decay": 1e-3,
+  "pixel_random_sampling_size": 160,
+  "seed":24,
+  "fp16": 1,
+  "amp_level": "O2",
+  "freeze_s1": 1,
+  "use_itm": 0,
+  "use_itc": 0,
+  "use_mlm": 1,
+  
+  "bert_mean": 1,
+  "n_workers": 8,
+
+  "backbone_channels": [256, 512, 1024, 2048],
+  "backbone_channel_in_size": 2048,
+  "hidden_size": 1024,
+
+  "temp": 0.05
+}

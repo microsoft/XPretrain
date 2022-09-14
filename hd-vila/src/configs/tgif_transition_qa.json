@@ -1,0 +1,87 @@
+{
+    "train_datasets": [
+      {
+        "name": "tgif_qa",
+        "txt": {
+          "action": "data/tgif_qa/action_train.jsonl",
+          "transition": "data/tgif_qa/transition_train.jsonl",
+          "frameqa": "data/tgif_qa/frameqa_train.jsonl"
+        },
+        "vis": "data/tgif_qa/videos_mp4"
+      }
+    ],
+    "val_datasets": [
+      {
+        "name": "tgif_qa",
+        "txt": {
+          "action": "data/tgif_qa/action_val.jsonl",
+          "transition": "data/tgif_qa/transition_val.jsonl",
+          "frameqa": "data/tgif_qa/frameqa_val.jsonl"
+        },
+        "vis": "data/tgif_qa/videos_mp4"
+      }
+    ],
+    "ans2label_path": "data/tgif_qa/frameqa_trainval_ans2label.json",
+    "max_txt_len": 30,
+    "max_img_size": 192,
+    "sample_rate": 4,
+    "reshape_size": [180, 288],
+    "crop_size": [160, 256],
+    "pad_value": 1,
+    "img_pixel_mean": [123.675, 116.28, 103.53],
+    "img_pixel_std": [1.0, 1.0, 1.0],
+    "img_input_format": "BGR",
+    "fps": 2,
+    "num_frm": 7,
+    "train_n_clips": 1,
+    "max_n_example_per_group": 1,
+    "model_config": "src/configs/base_model_large.json",
+    "e2e_weights_path": "data/pretrained/hdvila_stage2.pt",
+    "mmdetection_weights_path": "data/pretrained/res50_mmdetection.pth",
+    "bert_weights_path": "data/pretrained/bert-large-uncased/pytorch_model.bin",
+    "tokenizer_dir": "data/pretrained/bert-base-uncased/",
+    "output_dir": "data/output/videoqa/tgif_qa_transition/",
+    "train_batch_size": 12,
+    "val_batch_size": 12,
+    "gradient_accumulation_steps": 4,
+    "num_train_epochs": 80,
+    "min_valid_steps": 1,
+    "num_valid": 80,
+    "save_steps_ratio": 0.2,
+    "learning_rate": 5e-5,
+    "weight_decay": 1e-1,
+    "decay": "multi_step",
+    "step_decay_epochs":[10,20,30,40,50,60,70],
+    "optim": "adamw",
+    "betas": [0.9, 0.98],
+    "dropout": 0.1,
+    "grad_norm": 5.0,
+    "cnn_learning_rate": 5e-5,
+    "cnn_weight_decay": 1e-1,
+    "cnn_lr_decay": "multi_step",
+    "cnn_step_decay_epochs":[10,20,30,40,50,60,70],
+    "align_learning_rate": 5e-5,
+    "align_weight_decay": 1e-1,
+    "seed": 66,
+    "fp16": 1,
+    "classifier": "mlp",
+    "cls_hidden_scale": 2,
+    "task": "transition",
+    "n_workers": 4,
+  
+    "resnet_depth": 50,
+    "resnet_frozen_stage": -1,
+    "timesformer_depth": 4,
+    "timesformer_heads": 16,
+    "backbone_channels": [256, 512, 1024, 2048],
+    "backbone_downsample": [4, 8, 16, 32],
+    "backbone_channel_in_size": 2048,
+    "hidden_size": 1024,
+  
+  
+    "inference_model_step": 0,
+    "inference_txt_db": "data/tgif_qa/transition_test.jsonl",
+    "inference_img_db": "data/tgif_qa/videos_mp4",
+    "inference_batch_size": 4,
+    "inference_n_clips": 8
+  }

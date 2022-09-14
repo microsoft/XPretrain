@@ -1,0 +1,108 @@
+{
+  "train_datasets": 
+    {
+      "name": "msrvtt-9k",
+      "vis_format": "video",
+      "txt": "data/msrvtt_retrieval/train9k.jsonl",
+      "vis": "data/msrvtt_retrieval/videos_6fps"
+    },
+  "val_datasets": [
+
+    {
+      "name": "msrvtt-1ka",
+      "vis_format": "video",
+      "txt": "data/msrvtt_retrieval/test1ka.jsonl",
+      "vis": "data/msrvtt_retrieval/videos_6fps"
+    }
+  ],
+  "inference_datasets": [
+    {
+      "name": "msrvtt-1ka",
+      "vis_format": "video",
+      "txt": "data/msrvtt_retrieval/test1ka.jsonl",
+      "vis": "data/msrvtt_retrieval/videos_6fps"
+    }
+  ],
+  "img_pixel_mean": [123.675, 116.28, 103.53],
+  "img_pixel_std": [58.395, 57.12, 57.375],
+  "model_config": "src/configs/base_model_large.json",
+  "e2e_weights_path": "data/pretrained/hdvila_stage2.pt",
+  "mmdetection_weights_path": "data/pretrained/res50_mmdetection.pth",
+  "bert_weights_path": "data/pretrained/bert-large-uncased/pytorch_model.bin",
+  "tokenizer_dir": "data/pretrained/bert-base-uncased/",
+  "output_dir": "data/output/retrieval/msrvtt_retrieval",
+  "vis_steps":0,
+  
+  "resnet_depth": 50,
+  "resnet_frozen_stage": -1,
+  "bert_frozen_stage": -1,
+  "bert_mean":1,
+  "timesformer_depth": 4,
+  "timesformer_heads": 16,
+  "timesformer_type": "new",
+  "max_txt_len": 50,
+  "score_agg_func": "lse",
+  "loss_type": "ce",
+  "train_n_clips": 2,
+  "inference_n_clips": 4,
+  
+  "crop_size": [160,256],
+  "out_size": [256, 128, 64, 3],
+  "train_batch_size": 8,
+  "val_batch_size": 8,
+  "max_n_example_per_group": 1,
+  "gradient_accumulation_steps": 1,
+  "num_train_epochs": 200,
+  "min_valid_steps": 1,
+  "num_valid": 10,
+  "only_valid_steps": 100,
+  "save_steps_ratio": 0.1,
+  "learning_rate": 1e-5,
+  "decay": "multi_step",
+  "step_decay_epochs":[32, 64, 128, 256],
+  "cnn_step_decay_epochs":[32, 64, 128, 256],
+  "optim": "adamw",
+  "betas": [0.9, 0.98],
+  "dropout": 0.1,
+  "weight_decay": 1e-4,
+  "grad_norm": 5.0,
+  "cnn_learning_rate": 1e-5,
+  "cnn_weight_decay": 1e-4,
+  "cnn_lr_decay": "multi_step",
+  "align_learning_rate": 5e-6,
+  "align_weight_decay": 1e-3,
+  "generator_learning_rate": 5e-3,
+  "generator_weight_decay": 0.0,
+  "low_level_tasks": ["none"],
+  "pixel_random_sampling_size": 160,
+  "seed":24,
+  "fp16": 1,
+  "amp_level": "O2",
+  "use_itm": 0,
+  "use_itc": 1,
+  "use_mlm": 0,
+  
+  "n_workers": 4,
+
+  "pos_num":1,
+
+  "backbone_channels": [256, 512, 1024, 2048],
+  "backbone_downsample": [4, 8, 16, 32],
+  "backbone_channel_in_size": 2048,
+  "hidden_size": 1024,
+
+  "hframe":1,
+  "lframe":11,
+
+  
+  "num_frm": 7,
+  "sample_rate": 4,
+  "warmup_ratio":0.01,
+  
+  "temp": 0.1,
+  "loss_config":{
+    "loss_name":"NCEContrastiveLoss",
+    "temp":0.08
+  }
+  
+}
