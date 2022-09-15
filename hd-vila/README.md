@@ -134,7 +134,7 @@ Please replace the data path in [src/configs](src/configs) with your own data pa
 
 ## License
 
-The license of the code and pre-trained models is [here](../LICENSE).
+The license of the code and pre-trained models is [here](./LICENSE).
 
 ## Citing HD-VILA
 
