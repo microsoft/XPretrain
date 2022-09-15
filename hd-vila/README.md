@@ -31,8 +31,6 @@ We outperform SOTA models with relative increases of 40.4% R@1 in zero-shot MSR-
 
 ## Getting Started
 
-This code is borrowed from [ClipBERT Repo](https://github.com/jayleicn/ClipBERT), thanks to them! 
-
 
 ### General
 
@@ -148,3 +146,6 @@ If you find the code and pre-trained models useful for your research, please con
     year={2022}
 }
 ```
+
+## Acknowledgements
+The code is based on [ClipBERT](https://github.com/jayleicn/ClipBERT), thanks to them! 
