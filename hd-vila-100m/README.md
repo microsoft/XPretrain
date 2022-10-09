@@ -41,7 +41,7 @@ You can download all the urls through this [link](https://hdvila.blob.core.windo
 }
 ```
 
-We will release all the code to download and process the data soon.
+You can use [src/download_videos.py](./src/download_videos.py) to download the raw videos from YouTube and use [src/cut_videos.py](./src/cut_videos.py) to cut the videos to clips.
 
 
 ## License
