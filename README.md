@@ -4,7 +4,7 @@ This repo includes some recent research works in **multi-modality learning**, es
 
 ## Multi-modality Learning
 
-### *** Video & Language ***
+### ***** Video & Language *****
 
 #### Dataset
 
