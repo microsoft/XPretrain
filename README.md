@@ -4,7 +4,7 @@ This repo includes some recent research works in **multi-modality learning**, es
 
 ## Multi-modality Learning
 
-### Video & Language
+### **Video & Language
 
 #### Dataset
 
@@ -16,7 +16,7 @@ This repo includes some recent research works in **multi-modality learning**, es
 
 > [**LF-VILA**](https://github.com/microsoft/XPretrain/tree/main/LF-VILA) (NeurIPS 2022): long-form video-language pre-training model
 
-### Image & Language
+### **Image & Language
 
 #### Pre-training model
 
