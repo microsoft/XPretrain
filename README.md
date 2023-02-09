@@ -16,6 +16,8 @@ This repo includes some recent research works in **multi-modality learning**, es
 
 > [**LF-VILA**](https://github.com/microsoft/XPretrain/tree/main/LF-VILA) (NeurIPS 2022): long-form video-language pre-training model
 
+> [**CLIP-ViP**](https://github.com/microsoft/XPretrain/tree/main/CLIP-ViP) (ICLR 2023): adapting image-language pre-training to video-language pretraining model
+
 ### ***** Image & Language *****
 
 #### Pre-training model
@@ -28,6 +30,7 @@ This repo includes some recent research works in **multi-modality learning**, es
 
 ## News
 
+- <span style="color:red">January, 2023: our paper [**CLIP-ViP**](https://github.com/microsoft/XPretrain/tree/main/CLIP-ViP) to adapt image-language pre-training model to video-language pretraining was accepted by ICLR 2023. </span>
 - September, 2022: our paper [**LF-VILA**](https://github.com/microsoft/XPretrain/tree/main/LF-VILA) on long-form video-language pre-training was accepted by NeurIPS 2022. 
 - September, 2022: the code of [**HD-VILA**](https://github.com/microsoft/XPretrain/tree/main/hd-vila) was released.
 - March, 2022: [**HD-VILA-100M dataset**](https://github.com/microsoft/XPretrain/tree/main/hd-vila-100m) was released publicly.
