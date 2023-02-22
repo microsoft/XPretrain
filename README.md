@@ -12,11 +12,11 @@ This repo includes some recent research works in **multi-modality learning**, es
 
 #### Pre-training model
 
-> [**HD-VILA**](https://github.com/microsoft/XPretrain/tree/main/hd-vila) (CVPR 2022): high-resolution and diversified video-language pre-training model
+> [**HD-VILA (CVPR 2022)**](https://github.com/microsoft/XPretrain/tree/main/hd-vila): high-resolution and diversified video-language pre-training model
 
-> [**LF-VILA**](https://github.com/microsoft/XPretrain/tree/main/LF-VILA) (NeurIPS 2022): long-form video-language pre-training model
+> [**LF-VILA (NeurIPS 2022)**](https://github.com/microsoft/XPretrain/tree/main/LF-VILA): long-form video-language pre-training model
 
-> [**CLIP-ViP**](https://github.com/microsoft/XPretrain/tree/main/CLIP-ViP) (ICLR 2023): adapting image-language pre-training to video-language pretraining model
+> [**CLIP-ViP (ICLR 2023)**](https://github.com/microsoft/XPretrain/tree/main/CLIP-ViP): adapting image-language pre-training to video-language pretraining model
 
 ### ***** Image & Language *****
 
@@ -24,9 +24,9 @@ This repo includes some recent research works in **multi-modality learning**, es
 
 > [**Pixel-BERT**](https://arxiv.org/pdf/2004.00849.pdf): end-to-end image and language pre-training model
 
-> [**SOHO**](https://github.com/researchmm/soho) (CVPR 2021 oral): improved end-to-end image and language pre-training model with quantized visual tokens
+> [**SOHO (CVPR 2021 oral)**](https://github.com/researchmm/soho): improved end-to-end image and language pre-training model with quantized visual tokens
 
-> [**VisualParsing**](https://github.com/microsoft/XPretrain/tree/main/visualparsing)(NeurIPS 2021): Transformer-based end-to-end image and language pre-training model
+> [**VisualParsing (NeurIPS 2021)**](https://github.com/microsoft/XPretrain/tree/main/visualparsing): Transformer-based end-to-end image and language pre-training model
 
 ## News
 
