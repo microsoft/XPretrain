@@ -1,0 +1,10 @@
+jsonlines
+deepspeed==0.5.8
+transformers==4.15.0
+timm==0.4.12
+einops==0.3.2
+jsonlines==3.0.0
+tensorboardX==2.4.1
+decord==0.6.0
+easydict==1.9
+ruamel_yaml

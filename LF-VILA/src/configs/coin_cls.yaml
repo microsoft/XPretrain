@@ -1,0 +1,135 @@
+VideoEncoder: {
+    "patch_size": [1,8,8],
+    "embed_dim": 128,
+    "depths":[2, 2, 14, 2, 2, 2],
+    "downsample_stages":[0, 1, 4],
+    "stages":[0, 1, 2, 2, 2, 3],
+    "num_heads":[4, 8, 16, 16, 16, 32],
+    "window_size":[[2,3,5],[4,3,5],[8,3,5],[16,3,5],[16,3,5],[32,3,5]], #time, h, w
+    "patch_norm": True,
+    "local_window": 8
+}
+
+
+
+bert_config: "src/configs/bert_large_config.json"
+stage: 1
+type_vocab_size: 8
+num_local_layers: 8
+stage1_layers: 12
+bert_frozen_stage: -1
+
+
+WEIGHTS: 
+    model_weight: 'project/lfvila/pretrained/lfvila_stage1.bin'
+    stage1_model_weight: ''
+    bert_weight: ''
+    swin_weight: 'project/lfvila/pretrained/swin/swin_base_patch4_window12_384_22k.pth'
+    pretrained_2d: True
+
+DATA:
+    BATCH_SIZE_per_gpu: 16
+    NUM_WORKERS: 12
+    PIN_MEMORY: True
+
+    sample_frame: 32
+    sample_clip: 4
+    input_res: [192, 320]
+    center_crop: 200
+
+    classification_labels: 180
+
+    tokenizer_dir: 'project/lfvideo/pretrained/bert-large-uncased/'
+
+    DATASET_train: {
+            'name': 'VideoClassificationDataset-train',
+            'type': 'VideoClassificationDataset',
+            'metadata_dir': 'datasets/lfvila_data/task/COIN/coin_train.jsonl',
+            'video_path': 'datasets/COIN/coin_video'
+        }
+
+    DATASET_val: [{
+            'name': 'VideoClassificationDataset-val',
+            'type': 'VideoClassificationDataset',
+            'metadata_dir': 'datasets/lfvila_data/task/COIN/coin_test.jsonl',
+            'video_path': 'datasets/COIN/coin_video'
+        }
+        ]
+
+
+TRAINING:
+    save_feats: 0
+    only_val: 0
+    EPOCHS: 500
+    WARMUP_EPOCHS: 1
+    WARMUP_LR: 0.
+    LR_SCHEDULER: {
+        'NAME': 'linear',
+        'DECAY_EPOCHS': 10,
+        }
+
+    use_mlm: false
+
+
+    temp: 0.05
+    weight_decay: 0.05
+    save_dir: "project/lfvideo/lfvideo_save/coin"
+    checkpoint_step: 20000
+    save_step: 10000
+    print_step: 50
+    eval_step: 200
+
+deepspeed_config: {
+    "train_micro_batch_size_per_gpu": 16,
+    "gradient_accumulation_steps": 1,
+    "steps_per_print": 500,
+
+
+    "zero_optimization": {
+      "stage": 2,
+      "allgather_partitions": true,
+      "allgather_bucket_size": 5.0e+8,
+      "overlap_comm": false,
+      "reduce_scatter": true,
+      "reduce_bucket_size": 5.0e+8,
+      "contiguous_gradients" : false,
+      "stage3_gather_fp16_weights_on_model_save": true
+    },
+
+    "fp16": {
+      "enabled": true,
+      "loss_scale": 0,
+      "loss_scale_window": 1000,
+      "initial_scale_power": 32,
+      "hysteresis": 2,
+      "min_loss_scale": 1
+  },
+
+    "optimizer": {
+        "type": "AdamW",
+        "params": {
+        "lr": 5.0e-5,
+        "betas": [0.9, 0.98],
+        "eps": 1.0e-8,
+        "weight_decay": 5.0e-2
+        }
+    },
+
+
+    "sparse_attention": {
+      "mode": "fixed",
+      "block": 32,
+      "different_layout_per_head": true,
+      "num_local_blocks": 16,
+      "num_global_blocks": 1,
+      "attention": "bidirectional",
+      "horizontal_global_attention": true,
+      "num_different_global_patterns": 4
+    }
+}
+
+
+  
+
+
+  

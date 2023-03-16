@@ -1,0 +1,5 @@
+from .trainer_pretrain import Trainer_Pretrain
+from .trainer_qa_multichoice import Trainer_QA_Multichoice
+from .trainer_qa_classification import Trainer_QA_Classification
+from .trainer_retrieval import Trainer_Retrieval
+from .trainer_video_classification import Trainer_Video_Classification
