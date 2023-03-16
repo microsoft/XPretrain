@@ -1,0 +1,93 @@
+{
+    "train_datasets": [
+        {
+          "name": "hdvila",
+          "vis_format": "videoframe",
+          "txt": "datasets/hdvila/hdvila_subtitles_92m_db",
+          "vis": "youtube_data/ytt180m/video_clips_3fps",
+          "vid_cap_path": "datasets/hdvila/hdvila_captions_db",
+          "vid_txt": "subtitle",
+          "img_dir": "",
+          "cap_path": "",
+          "img_source": "",
+          "img_ratio": 0
+        }
+      ],
+      "val_datasets": [
+        {
+          "name": "msrvtt",
+          "vis_format": "video",
+          "txt": "clip_data/vis_db/msrvtt_video_clips/test1ka.jsonl",
+          "vis": "clip_data/vis_db/msrvtt_video_clips/videos_6fps"
+        },
+        {
+          "name": "how2",
+          "vis_format": "video",
+          "txt": "clip_data/vis_db/pretrain_data/test_howto_1k.jsonl",
+          "vis": "youtube_data/ytt180m/video_clips_3fps"
+        },
+        {
+          "name": "ours",
+          "vis_format": "video",
+          "txt": "clip_data/vis_db/pretrain_data/test_full_1k.jsonl",
+          "vis": "youtube_data/ytt180m/video_clips_3fps"
+        }
+    ],
+  
+    "train_n_clips": 1,
+    "train_num_frms": 12,
+    "test_n_clips": 1,
+    "test_num_frms": 12,
+    "sample_rate": 0,
+    "sample_jitter": 1,
+    "video_res": [240, 320],
+    "input_res": [224, 224],
+    "max_txt_len": 70,
+  
+    "e2e_weights_path": null,
+    "clip_weights": "openai/clip-vit-base-patch32",
+    "clip_config": "openai/clip-vit-base-patch32",
+    "clip_vision_additional_config": {
+      "type": "ViP",
+      "temporal_size": 12,
+      "if_use_temporal_embed": 1,
+      "logit_scale_init_value": 4.60,
+      "add_cls_num": 3
+    },
+  
+    "train_batch_size": 32,
+    "test_batch_size": 32,
+    "max_n_example_per_group": 1,
+    "gradient_accumulation_steps": 1,
+    "n_workers": 8,
+    "pin_mem": 1,
+    "fp16": 1,
+    "amp_level": "O2",
+    "seed": 42,
+  
+    "optim": "adamw",
+    "betas": [0.9, 0.98],
+    "learning_rate": 5e-6,
+    "weight_decay": 0.05,
+    "lr_mul": 1,
+    "lr_mul_prefix": "",
+    "loss_config": {
+      "loss_name": "NCELearnableTempLoss_vsc_fc",
+      "if_gather": 1
+    },
+    "warmup_ratio": 0.01,
+    "decay": "cosine",
+    "grad_norm": 5.0,
+  
+    "num_train_epochs": 5,
+    "min_valid_steps": 1,
+    "num_valid": 100,
+    "only_valid_steps": 1000,
+    "save_steps_ratio": 0.01,
+    "output_dir": "vidclip_data/output/pretrain/pretrain_vip_base_32/",
+    "if_tb_log": 1,
+    "if_model_saver": 1,
+    "if_log2file": 1,
+    "dummy_data": 0
+  }
+  
