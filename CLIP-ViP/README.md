@@ -23,7 +23,7 @@ We use mixed-precision training hence GPUs with Tensor Cores are recommended.
 
 1. Download Data.
 
-    Download HD-VILA-100M and other required data following the instruction of [HD-VILA](https://github.com/microsoft/XPretrain/tree/main/hd-vila) Also download auxiliary captions from: [Azure Blob Link](https://hdvila.blob.core.windows.net/dataset/hdvila_ofa_captions_db.zip?sp=r&st=2023-03-16T04:58:26Z&se=2026-03-01T12:58:26Z&spr=https&sv=2021-12-02&sr=b&sig=EYE%2Bj11VWfQ6G5dZ8CKlOOpL3ckmmNqpAtUgBy3OGDM%3D)
+    Download HD-VILA-100M and other required data following the instruction of [HD-VILA](https://github.com/microsoft/XPretrain/tree/main/hd-vila). Also download auxiliary captions from: [Azure Blob Link](https://hdvila.blob.core.windows.net/dataset/hdvila_ofa_captions_db.zip?sp=r&st=2023-03-16T04:58:26Z&se=2026-03-01T12:58:26Z&spr=https&sv=2021-12-02&sr=b&sig=EYE%2Bj11VWfQ6G5dZ8CKlOOpL3ckmmNqpAtUgBy3OGDM%3D)
 
 2. Download pretrained models.
 
