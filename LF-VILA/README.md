@@ -116,6 +116,14 @@ If you find the code and pre-trained models useful for your research, please con
     booktitle={NeurIPS},
     year={2022}
 }
+
+@inproceedings{xue2022advancing,
+  title={Advancing high-resolution video-language representation with large-scale video transcriptions},
+  author={Xue, Hongwei and Hang, Tiankai and Zeng, Yanhong and Sun, Yuchong and Liu, Bei and Yang, Huan and Fu, Jianlong and Guo, Baining},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5036--5045},
+  year={2022}
+}
 ```
 
 ## Acknowledgements
