@@ -28,7 +28,7 @@ The details of our dataset are presented in the table below.
 
 ## Download
 
-You can download all the urls through this [link](https://hdvila.blob.core.windows.net/dataset/hdvila100m.zip?sp=r&st=2022-06-28T03:33:11Z&se=2026-01-01T11:33:11Z&spr=https&sv=2021-06-08&sr=b&sig=VaqQkLFDqKinfkaPNs1jJ1EQIYCB%2FUPYiqFqmjWye6Y%3D) (updated 6/28/2022). Together we also offer all the timestamps to divide the videos into clips. The format of the data is:
+You can download all the urls through this [link](https://hdvila.blob.core.windows.net/dataset/hdvila100m.zip?sp=r&st=2026-03-27T05:18:28Z&se=2029-12-31T13:33:28Z&spr=https&sv=2024-11-04&sr=b&sig=yrM5NFyCzVw6T90miGSsw7qp4Ipk5xickAkAnX2rzoA%3D) (updated 6/28/2022). Together we also offer all the timestamps to divide the videos into clips. The format of the data is:
 ```
 {   
     'video_id':'QMi8x8o55Ns',
