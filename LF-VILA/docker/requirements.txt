@@ -1,6 +1,6 @@
 jsonlines
 deepspeed==0.5.8
-transformers==4.30.0
+transformers==4.36.0
 timm==0.4.12
 einops==0.3.2
 jsonlines==3.0.0
