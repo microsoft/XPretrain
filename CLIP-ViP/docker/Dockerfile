@@ -99,7 +99,7 @@ RUN pip install lpips
 RUN pip install ujson
 RUN pip install einops
 
-RUN pip install transformers==2.11.0 easydict tensorboardX==2.0 av==8.0.2 lz4==2.1.9 lmdb==0.97
+RUN pip install transformers==4.30.2 easydict tensorboardX==2.0 av==8.0.2 lz4==2.1.9 lmdb==0.97
 RUN apt install -y libgl1-mesa-glx
 RUN apt install -y libglib2.0-0
 
